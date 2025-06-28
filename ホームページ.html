@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>COCA</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+      font-size: 1.8rem; /* ← 通常のテキストを大きく */
+    }
+
+    header {
+      background-image: url('https://chat.google.com/u/1/api/get_attachment_url?url_type=FIFE_URL&content_type=image%2Fjpeg&attachment_token=AOo0EEUYkEi1kARh4hOQAwuf1pQvCqgNUwPCPSb9EBg3nbwy2xyfY8qwuxDQ%2BSJRKYYMBLm0CRIR0Ej8o%2B9AyyRX0i31jEvYyqj39ScD1yWPaFZlGTV819vsh3HBSc9TRtAzwY335hNDVZ7QHLY9jBf9PjsW2G92BKokDCP9tDZarqyDdlE8XLpNM8GX1WXAHzd4ppcyDGNoayM%2Fh2%2B8sVSDzisJt49Q%2FxZcsyVwz782c5BoYpJvd%2FpqYV9nrhXa5qCj8rcTvtnKENlHX5%2FFpQtIosMvg21YxFUvyIrRCd9y0M03PH%2FB5W9i9SL6s61FF9gDH4Hzz9tXASQ7Iz7%2FYk%2FcIYH02Fg3M5h4Mrn4lI9HmO%2Fxy31P09vvdj1QbACCILhirRXaprihIINEoR1OAxtDXIbGrBe9qIOgM7qTcGNQFzQrZ4vi%2FpG32SQoFFGA%2Fn%2BV5pdQCRbySyJB%2BzxkJxMJXpcdH%2Fx0oPgEA3Uey5FylHpZ7EcNm40lT4ieVMf9rfAC9jQF7ec9oi1%2F7GEqaa8oB5vsganOE%2BwdmBy6QG1OKSUJkHwCBI6zOnoAqxCPW8JFwT0V%2FAxCq6I0%2Bogg%2FSXw1gJIbCk%3D&allow_caching=true&authuser=1&sz=w1920-h928&auditContext=forDisplay'); /* 省略 */
+      background-size: cover;
+      background-position: center;
+      color: white;
+      text-align: center;
+      padding: 4em 1em;
+    }
+
+    nav a {
+      margin: 0 1em;
+      text-decoration: none;
+      font-weight: bold;
+      color: #00F9A9;
+      font-size: 2rem; /* ← ナビゲーションリンクを大きく */
+    }
+
+    section {
+      padding: 2em;
+    }
+
+    .content {
+      max-width: 900px;
+      margin: auto;
+    }
+
+    h1 {
+      font-size: 3.5rem; /* ← h1を大きく */
+    }
+
+    h2 {
+      font-size: 2.8rem; /* ← h2を大きく */
+    }
+
+    p, li {
+      font-size: 1.8rem; /* ← 本文やリストも大きく */
+    }
+
+    footer {
+      background: #333;
+      color: #fff;
+      padding: 1em;
+      text-align: center;
+      font-size: 1.6rem;
+    }
+
+    *,
+    *:before,
+    *:after {
+      box-sizing: inherit;
+    }
+
+    html {
+      box-sizing: border-box;
+      font-size: 62.5%;
+    }
+
+    .btn,
+    a.btn,
+    button.btn {
+      font-size: 1.6rem;
+      font-weight: 700;
+      line-height: 1.5;
+      position: relative;
+      display: inline-block;
+      padding: 1rem 4rem;
+      cursor: pointer;
+      user-select: none;
+      transition: all 0.3s;
+      text-align: center;
+      vertical-align: middle;
+      text-decoration: none;
+      letter-spacing: 0.1em;
+      color: #212529;
+      border-radius: 0.5rem;
+    }
+
+    a.btn-malformation {
+      font-size: 1.4rem;      /* ← 小さめに維持 */
+      padding: 1rem 2rem;
+      color: #fff;
+      border-radius: 100% 80px / 80px 100%;
+      background-color: #eb6100;
+    }
+
+    a.btn-malformation:hover {
+      color: #fff;
+      border-radius: 60% 80% / 100% 80%;
+    }
+
+    .btn-malformation--pastel {
+      background: linear-gradient(135deg, #fca1a1 40%, #fcfc5d 100%);
+      box-shadow: 30px 10px 0 #fefeb3;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <h1></h1>
+      <a href="#about" class="btn btn-malformation btn-malformation--pastel">会社案内</a>
+      <a href="#business" class="btn btn-malformation btn-malformation--pastel">事業内容</a>
+      <a href="#recruit" class="btn btn-malformation btn-malformation--pastel">採用情報</a>
+      <a href="#contact" class="btn btn-malformation btn-malformation--pastel">お問い合わせ</a>
+    </nav>
+  </header>
+
+  <section id="about" class="content">
+    <h2>会社案内</h2>
+    <p>会社の案内文</p>
+  </section>
+
+  <section id="business" class="content">
+    <h2>事業内容</h2>
+    <ul>
+      <li>もくじ1</li>
+      <li>もくじ2</li>
+      <li>もくじ3</li>
+      <li>もくじ4</li>
+    </ul>
+  </section>
+
+  <section id="recruit" class="content">
+    <h2>その他</h2>
+    <p>その他の文</p>
+  </section>
+
+  <section id="contact" class="content">
+    <h2>お問い合わせ</h2>
+    <p>ご相談・ご依頼は <a href="お問い合わせリンク">お問い合わせ文字</a> まで。</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 COCA</p>
+  </footer>
+
+</body>
+</html>
